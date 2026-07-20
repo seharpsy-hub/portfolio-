@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: portfolio-cms-api
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start.sh
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: ENVIRONMENT
+        value: production
+      - key: MEDIA_ROOT
+        value: ../media
+      - key: CORS_ORIGINS
+        sync: false
+      - key: REDIS_URL
+        value: redis://localhost:6379
