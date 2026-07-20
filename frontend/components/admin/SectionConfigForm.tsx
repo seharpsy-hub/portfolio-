@@ -787,6 +787,7 @@ export function SectionConfigForm({ type, config, onChange, siteId }: Props) {
   }
 
   if (type === "footer") {
+    const footerCta = (c.cta ?? {}) as { label?: string; href?: string };
     return (
       <div className="space-y-4">
         <Field label="Tagline / brand">
@@ -796,6 +797,14 @@ export function SectionConfigForm({ type, config, onChange, siteId }: Props) {
             onChange={(e) => setKey(c, "tagline", e.target.value, onChange)}
           />
         </Field>
+        <Field label="Short description">
+          <textarea
+            className={inputClass}
+            rows={3}
+            value={String(c.description ?? "")}
+            onChange={(e) => setKey(c, "description", e.target.value, onChange)}
+          />
+        </Field>
         <ImageUploadField
           label="Footer logo"
           value={String(c.logoUrl ?? "")}
@@ -803,6 +812,26 @@ export function SectionConfigForm({ type, config, onChange, siteId }: Props) {
           siteId={siteId}
           folder="brand"
         />
+        <div className="grid gap-3 sm:grid-cols-2">
+          <Field label="CTA label">
+            <input
+              className={inputClass}
+              value={String(footerCta.label ?? "")}
+              onChange={(e) =>
+                setKey(c, "cta", { ...footerCta, label: e.target.value }, onChange)
+              }
+            />
+          </Field>
+          <Field label="CTA link">
+            <input
+              className={inputClass}
+              value={String(footerCta.href ?? "")}
+              onChange={(e) =>
+                setKey(c, "cta", { ...footerCta, href: e.target.value }, onChange)
+              }
+            />
+          </Field>
+        </div>
         <Field label="Copyright">
           <input
             className={inputClass}
