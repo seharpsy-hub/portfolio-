@@ -94,11 +94,13 @@ export function defaultConfig(type: SectionType): Record<string, unknown> {
       return {
         tagline: "",
         logoUrl: "",
+        description: "",
+        cta: { label: "Book Your Consultation", href: "#contact" },
         columns: [],
         social: [],
         copyright: "",
         policyLinks: [],
-        paddingY: "md",
+        paddingY: "lg",
         background: "primary",
       };
     case "profile":
