@@ -343,28 +343,52 @@ CONTENT = {
     "footer": {
         "logoUrl": "/media/brand/sn-logo.svg",
         "tagline": "SN Diet & Nutrition",
+        "description": (
+            "Clinical dietetics with Dr. Samavia — personalized nutrition plans for weight "
+            "management, diabetes, PCOS, pregnancy, and lasting wellness across Bahawalpur & Haroonabad."
+        ),
+        "cta": {"label": "Book Your Consultation", "href": "#contact"},
         "columns": [
             {
                 "title": "Explore",
                 "links": [
-                    {"label": "About Dr. Samavia", "href": "#about"},
+                    {"label": "Meet Dr. Samavia", "href": "#profile"},
+                    {"label": "About", "href": "#about"},
                     {"label": "Services", "href": "#services"},
+                    {"label": "Client stories", "href": "#testimonials"},
                     {"label": "FAQ", "href": "#faq"},
-                    {"label": "Book consult", "href": "#contact"},
                 ],
             },
             {
-                "title": "Locations",
+                "title": "Care",
+                "links": [
+                    {"label": "Weight management", "href": "#plan-weight-loss"},
+                    {"label": "Diabetes nutrition", "href": "#plan-diabetes"},
+                    {"label": "PCOS support", "href": "#plan-pcos"},
+                    {"label": "Pregnancy nutrition", "href": "#plan-pregnancy"},
+                    {"label": "Book a consult", "href": "#contact"},
+                ],
+            },
+            {
+                "title": "Clinics",
                 "links": [
                     {"label": "Bahawalpur, Punjab", "href": "#contact"},
                     {"label": "Haroonabad, Punjab", "href": "#contact"},
+                    {"label": "Online consultations", "href": "#contact"},
                 ],
             },
         ],
-        "social": [],
+        "social": [
+            {"platform": "instagram", "href": "https://instagram.com"},
+            {"platform": "facebook", "href": "https://facebook.com"},
+            {"platform": "whatsapp", "href": "https://wa.me/"},
+        ],
         "copyright": "© 2026 SN Diet & Nutrition · Dr. Samavia. All rights reserved.",
-        "policyLinks": [{"label": "Privacy", "href": "#"}],
-        "paddingY": "md",
+        "policyLinks": [
+            {"label": "Privacy", "href": "#"},
+            {"label": "Terms", "href": "#"},
+        ],
+        "paddingY": "lg",
         "background": "primary",
     },
 }
