@@ -1,4 +1,4 @@
-"""Apply Dr. Samavia CMS content (editable via admin — not hardcoded in frontend)."""
+"""Apply Samavia CMS content (editable via admin — not hardcoded in frontend)."""
 from __future__ import annotations
 
 import uuid
@@ -18,7 +18,7 @@ CONTENT = {
             "dietary guidance, and compassionate support from an experienced Dietitian & Nutritionist."
         ),
         "ctaPrimary": {"label": "Book Your Consultation", "href": "#contact"},
-        "ctaSecondary": {"label": "Meet Dr. Samavia", "href": "#profile"},
+        "ctaSecondary": {"label": "Meet Samavia", "href": "#profile"},
         "backgroundImage": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1800&q=80",
         "overlayOpacity": 0.55,
         "overlayColor": "#1A2E05",
@@ -45,7 +45,7 @@ CONTENT = {
         "role": "dr",
         "eyebrow": "Meet your Consultant Nutritionist & Dietitan",
         "badge": "Consultant Nutritionist & Dietitan",
-        "name": "Dr. Samavia",
+        "name": "Samavia",
         "title": "Clinical Dietitian & Nutritionist",
         "description": (
             "Dedicated and compassionate Dietitian & Nutritionist committed to helping individuals "
@@ -66,11 +66,11 @@ CONTENT = {
         "background": "surface",
     },
     "about": {
-        "title": "About Dr. Samavia",
-        "subtitle": "Meet Dr. Samavia",
+        "title": "About Samavia",
+        "subtitle": "Meet Samavia",
         "paragraphs": [
             (
-                "Dr. Samavia is a dedicated and compassionate Dietitian & Nutritionist committed to helping "
+                "Samavia is a dedicated and compassionate Dietitian & Nutritionist committed to helping "
                 "individuals achieve healthier lifestyles through personalized nutrition care. With a Bachelor "
                 "of Science (BS) in Dietetics & Nutrition, she combines scientific knowledge with practical "
                 "dietary solutions to support people of all ages."
@@ -82,12 +82,12 @@ CONTENT = {
             ),
             (
                 "Known for her caring approach, strong communication skills, and commitment to patient well-being, "
-                "Dr. Samavia provides customized nutrition plans designed to meet each individual's unique health "
+                "Samavia provides customized nutrition plans designed to meet each individual's unique health "
                 "needs and lifestyle."
             ),
         ],
         "professionalSummary": (
-            "Dr. Samavia believes that every person deserves a healthy life through balanced nutrition. "
+            "Samavia believes that every person deserves a healthy life through balanced nutrition. "
             "Her mission is to educate, guide, and support individuals in making sustainable dietary choices "
             "that improve long-term health and overall well-being."
         ),
@@ -105,7 +105,7 @@ CONTENT = {
                 "value": "Bahawalpur, Punjab\nHaroonabad, Punjab",
             },
         ],
-        "whyChooseTitle": "Why Choose Dr. Samavia?",
+        "whyChooseTitle": "Why Choose Samavia?",
         "whyChoose": [
             "Personalized Nutrition Plans",
             "Evidence-Based Dietary Guidance",
@@ -264,7 +264,7 @@ CONTENT = {
         "subtitle": "Trusted by patients across Punjab",
         "items": [
             {
-                "quote": "Dr. Samavia listened carefully to my concerns and created a nutrition plan that was easy to follow. I feel healthier and more energetic than ever.",
+                "quote": "Samavia listened carefully to my concerns and created a nutrition plan that was easy to follow. I feel healthier and more energetic than ever.",
                 "author": "Ayesha K.",
                 "role": "Patient",
                 "avatar": "",
@@ -346,7 +346,7 @@ CONTENT = {
         "logoUrl": "/media/brand/sn-logo.svg",
         "tagline": "SN Diet & Nutrition",
         "description": (
-            "Clinical dietetics with Dr. Samavia — personalized nutrition plans for weight "
+            "Clinical dietetics with Samavia — personalized nutrition plans for weight "
             "management, diabetes, PCOS, pregnancy, and lasting wellness across Bahawalpur & Haroonabad."
         ),
         "cta": {"label": "Book Your Consultation", "href": "#contact"},
@@ -354,7 +354,7 @@ CONTENT = {
             {
                 "title": "Explore",
                 "links": [
-                    {"label": "Meet Dr. Samavia", "href": "#profile"},
+                    {"label": "Meet Samavia", "href": "#profile"},
                     {"label": "About", "href": "#about"},
                     {"label": "Services", "href": "#services"},
                     {"label": "Client stories", "href": "#testimonials"},
@@ -385,7 +385,7 @@ CONTENT = {
             {"platform": "facebook", "href": "https://facebook.com"},
             {"platform": "whatsapp", "href": "https://wa.me/"},
         ],
-        "copyright": "© 2026 SN Diet & Nutrition · Dr. Samavia. All rights reserved.",
+        "copyright": "© 2026 SN Diet & Nutrition · Samavia. All rights reserved.",
         "policyLinks": [
             {"label": "Privacy", "href": "#"},
             {"label": "Terms", "href": "#"},
@@ -396,12 +396,12 @@ CONTENT = {
 }
 
 SEO = {
-    "metaTitle": "Dr. Samavia | Dietitian & Nutritionist in Bahawalpur & Haroonabad",
+    "metaTitle": "Samavia | Dietitian & Nutritionist in Bahawalpur & Haroonabad",
     "metaDescription": (
         "Personalized nutrition plans, clinical diet guidance, weight management, diabetes, "
-        "PCOS, pregnancy & sports nutrition with Dr. Samavia — Bahawalpur & Haroonabad, Punjab."
+        "PCOS, pregnancy & sports nutrition with Samavia — Bahawalpur & Haroonabad, Punjab."
     ),
-    "ogTitle": "Dr. Samavia · Clinical Dietitian & Nutritionist",
+    "ogTitle": "Samavia · Clinical Dietitian & Nutritionist",
     "ogDescription": "Evidence-based, personalized nutrition care for lasting health.",
     "keywords": (
         "Dietitian in Bahawalpur, Nutritionist in Bahawalpur, Best Dietitian in Punjab, "
@@ -475,7 +475,7 @@ def apply() -> None:
                 )
 
         db.commit()
-        print("Dr. Samavia content applied. Editable anytime in admin.")
+        print("Samavia content applied. Editable anytime in admin.")
     finally:
         db.close()
 

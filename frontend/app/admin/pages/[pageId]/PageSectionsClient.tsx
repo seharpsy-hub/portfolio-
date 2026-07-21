@@ -197,7 +197,7 @@ function AdminPageSectionsInner({ pageId }: { pageId: string }) {
   }
 
   const editing = sections.find((s) => s.id === editingId);
-  const hasDoctor = sections.some((s) => s.type === "profile");
+  const hasProfile = sections.some((s) => s.type === "profile");
   const previewUrl = siteSlug ? `/site/${siteSlug}/home?v=${previewKey}` : null;
 
   return (
@@ -357,7 +357,7 @@ function AdminPageSectionsInner({ pageId }: { pageId: string }) {
             <p className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
               Sections · {sections.length}
             </p>
-            {!hasDoctor ? (
+            {!hasProfile ? (
               <button
                 type="button"
                 onClick={() => addSection("profile")}
@@ -379,7 +379,7 @@ function AdminPageSectionsInner({ pageId }: { pageId: string }) {
             </p>
           ) : null}
 
-          {!hasDoctor ? (
+          {!hasProfile ? (
             <div className="mb-4 rounded-xl border border-dashed border-emerald-500/35 bg-emerald-500/5 p-4">
               <p className="text-sm font-medium text-emerald-200">Consultant Nutritionist & Dietitan / Profile missing</p>
               <p className="mt-1 text-xs leading-relaxed text-zinc-500">

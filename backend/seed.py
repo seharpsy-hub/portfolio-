@@ -286,7 +286,7 @@ SECTION_CONFIGS = [
         "sort_order": 1,
         "config": {
             "role": "dr",
-            "name": "Dr. Ayesha Rahman, RD",
+            "name": "Ayesha Rahman, RD",
             "title": "Clinical Dietitian & Nutrition Coach",
             "description": "Board-trained dietitian helping clients master fat-loss, high-protein, gym fuel, and PCOS nutrition — with plates that still feel like home.",
             "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=80",
@@ -498,7 +498,7 @@ def seed() -> None:
                     "logo_url": "",
                     "seo": {
                         "metaTitle": "Nourish & Thrive | Clinical nutrition & diet plans",
-                        "metaDescription": "Personal meal plans, fat-loss coaching, and clinical nutrition with Dr. Ayesha Rahman, RD.",
+                        "metaDescription": "Personal meal plans, fat-loss coaching, and clinical nutrition with Ayesha Rahman, RD.",
                         "keywords": "dietitian, meal plans, nutrition coach",
                         "robots": "index,follow",
                     },
@@ -525,7 +525,7 @@ def seed() -> None:
                         "logo_url": "",
                         "seo": {
                             "metaTitle": "Nourish & Thrive | Clinical nutrition & diet plans",
-                            "metaDescription": "Personal meal plans, fat-loss coaching, and clinical nutrition with Dr. Ayesha Rahman, RD.",
+                            "metaDescription": "Personal meal plans, fat-loss coaching, and clinical nutrition with Ayesha Rahman, RD.",
                             "keywords": "dietitian, meal plans, nutrition coach",
                             "robots": "index,follow",
                         },

@@ -439,7 +439,7 @@ export function AboutSection({ config, theme, layoutStyle = 1 }: SectionProps) {
               className="text-xl sm:text-2xl md:text-3xl"
               style={{ fontFamily: "var(--font-heading)" }}
             >
-              {str(config.whyChooseTitle, "Why Choose Dr. Samavia?")}
+              {str(config.whyChooseTitle, "Why Choose Samavia?")}
             </h3>
             <ul className="mt-5 grid gap-2.5 sm:mt-6 sm:grid-cols-2 sm:gap-3">
               {whyChoose.map((item, i) => (

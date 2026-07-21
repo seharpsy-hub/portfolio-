@@ -108,7 +108,7 @@ export function defaultConfig(type: SectionType): Record<string, unknown> {
         role: "dr",
         eyebrow: "Meet your Consultant Nutritionist & Dietitan",
         badge: "Consultant Nutritionist & Dietitan",
-        name: "Dr. Samavia",
+        name: "Samavia",
         title: "Clinical Dietitian & Nutritionist",
         description:
           "Helping individuals achieve healthier lifestyles through personalized nutrition care.",
