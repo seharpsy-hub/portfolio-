@@ -13,7 +13,7 @@ import type { Theme } from "@/lib/types";
 import { MotionSection, StaggerChildren, StaggerItem } from "@/components/MotionSection";
 
 const ROLE_LABELS: Record<string, string> = {
-  dr: "Doctor",
+  dr: "Consultant Nutritionist & Dietitan",
   owner: "Owner",
   student: "Student",
   agency: "Agency",
@@ -29,6 +29,8 @@ interface Props {
 export function ProfileSection({ config, theme, layoutStyle = 1 }: Props) {
   const role = str(config.role, "dr").toLowerCase();
   const roleLabel = ROLE_LABELS[role] ?? "Professional";
+  const badge = str(config.badge, roleLabel);
+  const eyebrow = str(config.eyebrow, `Meet your ${roleLabel.toLowerCase()}`);
   const name = str(config.name, "Dr. Name");
   const title = str(config.title, "Title");
   const description = str(config.description);
@@ -70,13 +72,13 @@ export function ProfileSection({ config, theme, layoutStyle = 1 }: Props) {
             </div>
           )}
           <span className="absolute left-3 top-3 rounded-xl bg-[var(--color-primary)] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-white sm:left-4 sm:top-4 sm:px-3 sm:py-1.5 sm:text-[11px]">
-            {roleLabel}
+            {badge}
           </span>
         </div>
 
         <div className="min-w-0 text-center md:text-left">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-primary)] sm:text-sm sm:tracking-[0.22em]">
-            Meet your {roleLabel.toLowerCase()}
+            {eyebrow}
           </p>
           <h2
             className="mt-2 text-2xl leading-tight text-[var(--color-text)] sm:mt-3 sm:text-3xl md:text-5xl"

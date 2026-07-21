@@ -43,6 +43,8 @@ CONTENT = {
     },
     "profile": {
         "role": "dr",
+        "eyebrow": "Meet your Consultant Nutritionist & Dietitan",
+        "badge": "Consultant Nutritionist & Dietitan",
         "name": "Dr. Samavia",
         "title": "Clinical Dietitian & Nutritionist",
         "description": (

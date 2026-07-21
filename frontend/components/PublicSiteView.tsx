@@ -7,7 +7,7 @@ import { mediaUrl } from "@/lib/api";
 import type { Section, Site, Theme } from "@/lib/types";
 
 const NAV = [
-  { href: "#profile", label: "Doctor" },
+  { href: "#profile", label: "Consultant Nutritionist & Dietitan" },
   { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
   { href: "#testimonials", label: "Reviews" },

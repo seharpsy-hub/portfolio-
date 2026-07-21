@@ -363,7 +363,7 @@ function AdminPageSectionsInner({ pageId }: { pageId: string }) {
                 onClick={() => addSection("profile")}
                 className="rounded-lg bg-emerald-500/90 px-3 py-1.5 text-xs font-semibold text-zinc-950 hover:bg-emerald-400"
               >
-                + Add Doctor section
+                + Add Consultant Nutritionist & Dietitan section
               </button>
             ) : null}
           </div>
@@ -381,9 +381,9 @@ function AdminPageSectionsInner({ pageId }: { pageId: string }) {
 
           {!hasDoctor ? (
             <div className="mb-4 rounded-xl border border-dashed border-emerald-500/35 bg-emerald-500/5 p-4">
-              <p className="text-sm font-medium text-emerald-200">Doctor / Profile missing</p>
+              <p className="text-sm font-medium text-emerald-200">Consultant Nutritionist & Dietitan / Profile missing</p>
               <p className="mt-1 text-xs leading-relaxed text-zinc-500">
-                Add a Doctor section to show the dietitian profile (photo, credentials, book CTA)
+                Add a Consultant Nutritionist & Dietitan section to show the profile (photo, credentials, book CTA)
                 on the public site.
               </p>
               <button
@@ -391,7 +391,7 @@ function AdminPageSectionsInner({ pageId }: { pageId: string }) {
                 onClick={() => addSection("profile")}
                 className="mt-3 rounded-lg bg-emerald-500 px-3 py-2 text-xs font-semibold text-zinc-950"
               >
-                Add Doctor / Profile
+                Add Consultant Nutritionist & Dietitan / Profile
               </button>
             </div>
           ) : null}
@@ -423,7 +423,7 @@ function AdminPageSectionsInner({ pageId }: { pageId: string }) {
                     </div>
                     {section.type === "profile" ? (
                       <p className="mt-1.5 truncate text-xs text-zinc-500">
-                        {String(section.config?.name ?? "Doctor profile")} ·{" "}
+                        {String(section.config?.name ?? "Consultant Nutritionist & Dietitan profile")} ·{" "}
                         {String(section.config?.role ?? "dr")}
                       </p>
                     ) : null}
@@ -542,7 +542,7 @@ function AdminPageSectionsInner({ pageId }: { pageId: string }) {
             <div className="flex h-48 flex-col items-center justify-center rounded-xl border border-dashed border-white/10 px-6 text-center">
               <p className="text-sm text-zinc-400">Select a section to edit</p>
               <p className="mt-1 max-w-xs text-xs text-zinc-600">
-                Tip: use <span className="text-zinc-400">Doctor / Profile</span> for the
+                Tip: use <span className="text-zinc-400">Consultant Nutritionist & Dietitan / Profile</span> for the
                 practitioner bio, then Hero, Plans, and Contact.
               </p>
             </div>

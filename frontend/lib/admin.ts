@@ -14,7 +14,7 @@ export const SECTION_TYPES: SectionType[] = [
 /** Friendly labels for admin UI */
 export const SECTION_TYPE_LABELS: Record<SectionType, string> = {
   hero: "Hero banner",
-  profile: "Doctor / Profile",
+  profile: "Consultant Nutritionist & Dietitan / Profile",
   about: "About story",
   services: "Diet plans",
   testimonials: "Reviews",
@@ -24,7 +24,7 @@ export const SECTION_TYPE_LABELS: Record<SectionType, string> = {
 };
 
 export const PROFILE_ROLES = [
-  { value: "dr", label: "Doctor / Dietitian" },
+  { value: "dr", label: "Consultant Nutritionist & Dietitan" },
   { value: "owner", label: "Owner" },
   { value: "student", label: "Student" },
   { value: "agency", label: "Agency" },
@@ -106,6 +106,8 @@ export function defaultConfig(type: SectionType): Record<string, unknown> {
     case "profile":
       return {
         role: "dr",
+        eyebrow: "Meet your Consultant Nutritionist & Dietitan",
+        badge: "Consultant Nutritionist & Dietitan",
         name: "Dr. Samavia",
         title: "Clinical Dietitian & Nutritionist",
         description:

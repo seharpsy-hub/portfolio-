@@ -691,12 +691,28 @@ export function SectionConfigForm({ type, config, onChange, siteId }: Props) {
             value={String(c.role ?? "dr")}
             onChange={(e) => setKey(c, "role", e.target.value, onChange)}
           >
-            <option value="dr">Doctor / Dietitian</option>
+            <option value="dr">Consultant Nutritionist &amp; Dietitan</option>
             <option value="owner">Owner</option>
             <option value="student">Student</option>
             <option value="agency">Agency</option>
             <option value="company">Company</option>
           </select>
+        </Field>
+        <Field label="Eyebrow text (e.g. Meet your Consultant Nutritionist & Dietitan)">
+          <input
+            className={inputClass}
+            value={String(c.eyebrow ?? "")}
+            placeholder="Meet your Consultant Nutritionist & Dietitan"
+            onChange={(e) => setKey(c, "eyebrow", e.target.value, onChange)}
+          />
+        </Field>
+        <Field label="Badge label (shown on photo)">
+          <input
+            className={inputClass}
+            value={String(c.badge ?? "")}
+            placeholder="Consultant Nutritionist & Dietitan"
+            onChange={(e) => setKey(c, "badge", e.target.value, onChange)}
+          />
         </Field>
         <Field label="Name">
           <input
@@ -721,7 +737,7 @@ export function SectionConfigForm({ type, config, onChange, siteId }: Props) {
           />
         </Field>
         <ImageUploadField
-          label="Doctor / profile photo"
+          label="Profile photo"
           value={String(c.image ?? "")}
           onChange={(url) => setKey(c, "image", url, onChange)}
           siteId={siteId}

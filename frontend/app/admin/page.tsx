@@ -43,7 +43,7 @@ export default function AdminLoginPage() {
           Studio access
         </h1>
         <p className="mt-2 text-sm text-zinc-500">
-          Manage sites, Doctor sections, SEO & Google tools, and themes — password from backend .env
+          Manage sites, Consultant Nutritionist & Dietitan sections, SEO & Google tools, and themes — password from backend .env
         </p>
         <form onSubmit={onSubmit} className="mt-8 space-y-4">
           <label className="block text-sm text-zinc-400">
