@@ -5,5 +5,7 @@ echo "Running database migrations..."
 alembic upgrade head
 echo "Seeding demo data (safe if already seeded)..."
 python seed.py || echo "Seed skipped or already applied"
+echo "Applying Sehar Saqib portfolio content..."
+python apply_sehar_content.py || echo "Sehar content apply skipped"
 echo "Starting API on port ${PORT:-8000}..."
 exec uvicorn app.main:app --host 0.0.0.0 --port "${PORT:-8000}"
